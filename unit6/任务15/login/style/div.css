@@ -1,0 +1,94 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	padding:0px;
+	margin:0px;
+	border:0px;}
+body{
+	font-family:"微软雅黑";}
+input:focus{
+	outline:none;}
+#login{
+	width:450px;
+	height:380px;
+	border:1px solid #999;
+	box-shadow:0px 0px 5px 2px #CCCCCC;
+	border-radius:10px;
+	margin:40px auto;}
+#login .loginFunc{
+	height:48px;
+	width:100%;
+	margin-bottom:45px;}
+.loginFuncApp,.loginFuncNormal{
+	display:inline-block;
+	width:100px;
+	text-align:center;
+	line-height:48px;
+	color:#666;
+	margin:10px 60px;}
+.loginFuncNormal{
+	color:#0a8745;
+	border-bottom:2px solid #0a8745;}
+.identity,.password{
+	width:328px;
+	height:45px;
+	margin:10px 60px 10px 38px;
+	border:1px solid #CCC;
+	padding-left:45px;
+	}
+.identity{
+	background:url(../images/timg1.png) no-repeat 10px center;}
+.password{
+	background:url(../images/timg2.png) no-repeat 10px center;}
+.identity:focus,.password:focus{
+	border:1px solid #0A8745;}
+/*设置输入框的提示文字颜色*/
+::-webkit-input-placeholder{
+	color:#CCC;}
+.info{
+	height:20px;
+	padding:0 0 10px 40px;	
+	}
+.checkbox{
+	width:16px;
+	height:16px;
+	vertical-align:bottom;}
+/*<span>是行内元素,span只有margin-left和margin-right才有效果。要想margin-top生效就要把span转成块级元素才行。*/
+.info span{
+	font-size:14px;
+	color:#666;
+	vertical-align:bottom;
+	margin-left:10px;
+	}
+.info span.help{
+	 margin-left:190px;}
+.info span a{
+	color:#0A8745;
+	text-decoration:none;}
+.submit,.button{
+	width:172px;
+	height:50px;
+	border-radius:4px;
+	text-align:center;
+	font-size:18px;
+	cursor:pointer;}
+.submit{
+	background:#0A8745;
+	color:#FFF;
+	margin:20px 20px 0px 40px;}
+.button{
+	border:1px solid #a7d4bd;
+	color:#0A8745;
+	background:#e6f3ec;}
+.submit:hover{
+	background:#077e3f;}
+.button:hover{
+	background:#cee7da;}
+	
+	
+
+	
+
+	
+
+

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>学生档案</title>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		font-family:"微软雅黑";
+		background:url(images/bg.jpg) no-repeat center;
+		background-size:cover;		
+	}
+	form {
+		max-width: 640px;
+		width: 100%;
+		margin: 24px auto 80px;
+		font-size: 28px;
+	}
+	span {
+		display: block;
+		margin: 10px 10px 15px;
+		font-size: 24px;
+	}
+	input {
+		display: block;
+		width: 100%;
+		height: 40px;
+		font-size: 22px;
+		margin-top: 10px;
+		padding: 6px 10px;
+		color: #333;
+		border: 1px solid #CCC;
+		box-sizing: border-box;
+	}
+	meter, progress {
+		display: block;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.btn {
+		margin-top: 30px;
+	}
+	.btn input {
+		color: #FFF;
+		background-color: green;
+		border: 0 none;
+		outline: none;
+		cursor: pointer;
+	}
+</style>
+</head>
+<body>
+<form action="">
+		<h3>学生档案</h3>
+		<span>
+			姓名（必填）: <input type="text" required autofocus placeholder="请输入姓名">
+		</span>
+		<span>
+			手机号码（必填）: <input type="tel" required pattern="^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$" placeholder="请输入手机号码">
+		</span>
+		<span>
+			邮箱地址（必填）: <input type="email" required placeholder="请输入邮箱地址">
+		</span>
+		<span>
+			所属专业（必填）: <input type="text" list="zhuanye"  required placeholder="物联网应用技术">
+			<datalist id="zhuanye">
+				<option value="物联网应用技术"></option>
+				<option value="计算机应用技术"></option>
+				<option value="安全防范技术"></option>
+				<option value="消防工程技术"></option>
+				<option value="工业设计"></option>
+				<option value="大数据技术应用"></option>				
+			</datalist>
+		</span>
+		<span>
+			入学成绩: <input type="number" max="760" id="score" step="10" value="420">
+		</span>
+		<span>
+			基础水平: <meter min="0" max="100" low="60" high="80" value="80" id="level"></meter>
+		</span>
+		<span>
+			入学日期: <input type="date" value="2018-09-01">
+		</span>
+		<span>
+			毕业时间: <input type="date" value="2021-06-01">
+		</span>
+		<span>
+			课程进度: <progress min="0" max="100" value="10"></progress>
+		</span>
+		<span class="btn">
+			<input type="submit" value="保存">
+		</span>	
+</form>
+</body>
+</html>

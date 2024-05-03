@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>事件及事件驱动</title>
+<script>
+function changetext(id)
+{
+id.innerHTML="鼠标未移开！";//innerHTML属性用于设置或返回指定标签之间的HTML内容。
+}
+function resettext(id)
+{
+id.innerHTML="鼠标已移开！";
+}
+</script>
+</head>
+
+<body>
+<h1 onmouseover="changetext(this)" onmouseout="resettext(this)">鼠标已移开！</h1>
+</body>
+</html>

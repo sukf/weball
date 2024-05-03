@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创建简历</title>
+<link href="style/div.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="wrap">
+  <div class="header"><h3>创建简历</h3></div>
+  <form name="resume" class="resume" method="post" action="#" autocomplete="on">
+  <div class="title"><h5>注意：录入个人简历</h5></div>
+  <div class="content">
+  <table width="570" border="0" cellpadding="0" cellspacing="1">
+  <tr>
+    <td align="center" class="cols1">姓名<span class="sign">*</span></td>
+    <td align="center" class="cols2"><input type="text" class="input1" required></td>
+    <td align="center" class="cols1">照片</td>
+    <td align="center" class="cols2"><input type="file" class="input1"></td>
+  </tr>
+  <tr>
+    <td align="center" class="cols1">性别</td>
+    <td align="center" class="cols2">
+    <input type="radio" name="sex" id="man" checked>&nbsp;&nbsp;男&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="radio" name="sex" id="woman">&nbsp;&nbsp;女
+    </td>
+    <td align="center" class="cols1">电子邮箱<span class="sign">*</span></td>
+    <td align="center" class="cols2"><input type="email" class="input1" required></td>
+  </tr>
+  <tr>
+    <td align="center" class="cols1">出生日期</td>
+    <td align="center" class="cols2"><input type="date" class="input1"></td>
+    <td align="center" class="cols1">年龄</td>
+    <td align="center" class="cols2"><input type="number" class="input1" min="12" max="100"></td>
+  </tr>
+  <tr>
+    <td align="center" class="cols1">政治面貌</td>
+    <td align="center" class="cols2"><input type="text" class="input1"></td>
+    <td align="center" class="cols1">自学能力</td>
+    <td align="center" class="cols2"><input type="range" class="input1" min="1" max="100"></td>
+  </tr>
+  <tr>
+    <td align="center" class="cols1">手机号码<span class="sign">*</span></td>
+    <td align="center" class="cols2"><input type="tel" class="input1" required></td>
+    <td align="center" class="cols1">幸运颜色</td>
+    <td align="center" class="cols2"><input type="color" value="#ff0000"></td>
+  </tr>
+  <tr>
+    <td align="center" class="cols1">搜索同名</td>
+    <td colspan="3" align="center" class="cols2"><input type="search" class="input2"></td>
+    </tr>
+  <tr>
+    <td align="center" class="cols1">兴趣爱好</td>
+    <td colspan="3" align="center" class="cols2">
+      <input type="checkbox" name="run">&nbsp;&nbsp;跑步&nbsp;&nbsp;
+      <input type="checkbox" name="swim">&nbsp;&nbsp;游泳&nbsp;&nbsp;
+      <input type="checkbox" name="sing">&nbsp;&nbsp;唱歌&nbsp;&nbsp;
+      <input type="checkbox" name="yoga">&nbsp;&nbsp;瑜伽&nbsp;&nbsp;
+    </td>
+    </tr>
+  <tr>
+    <td align="center" class="cols1">个人主页</td>
+    <td colspan="3" align="center" class="cols2">
+    <input type="url" class="input2">
+    </td>
+    </tr>
+  </table>
+  </div>
+  <div class="bottom"><input type="submit" value="添加"><input type="button" value="关闭"></div>  
+  </form>
+</div>
+</body>
+</html>

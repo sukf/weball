@@ -1,0 +1,44 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>焦点图广告</title>
+<link href="css/slideshow.css" rel="stylesheet" type="text/css">
+<script src="js/slideshow.js"></script>
+</head>
+
+<body>
+<!-- 焦点图代码开始 -->
+    <div class="wrapad" id="slideContainer">           
+            <div class="block">
+                <div class="cl">
+                    <ul class="slideshow" id="slideImgs">
+                        <li><a href="#" target="_blank"><img src="images/1.png"/></a>
+                            <span class="title">第1张图的描述信息</span></li>
+                        <li><a href="#" target="_blank"><img src="images/2.png"/></a>
+                            <span class="title">第2张图的描述信息</span></li>
+                        <li><a href="#" target="_blank"><img src="images/3.png"/></a>
+                            <span class="title">第3张图的描述信息</span></li>
+                        <li><a href="#" target="_blank"><img src="images/4.png"/></a>
+                            <span class="title">第4张图的描述信息</span></li>
+                        <li><a href="#" target="_blank"><img src="images/5.png"/></a>
+                            <span class="title">第5张图的描述信息</span></li>
+                    </ul>
+                </div>
+                <div class="slidebar" id="slideBar">
+                    <ul>
+                        <li class="on">1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>                        
+                    </ul>
+                </div>
+            </div>       
+    </div>
+    <script type="text/javascript">
+        SlideShow(1000);   <!--设置切换图片的时间间隔，默认为1000毫秒-->
+    </script>
+    <!-- 焦点图代码结束 -->
+</body>
+</html>

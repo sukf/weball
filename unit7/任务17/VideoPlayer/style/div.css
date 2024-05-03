@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	list-style:none;
+	margin:0;
+	padding:0;}
+.box{
+	width:1020px;
+	height:400px;
+	margin:0 auto;
+	border:1px solid #ccc;
+	background:#262625;
+	position:relative;}
+video{
+	width:605px;
+	position:absolute;
+	left:20px;
+	top:30px;}
+ul{
+	width:350px;
+	height:340px;
+	position:absolute;
+	right:20px;
+	top:30px;
+	background:#171717;}
+li{
+	width:352px;
+	height:115px;}
+img{
+	width:160px;
+	float:left;}
+p{
+	width:150px;
+	padding-right:30px;
+	float:right;
+	color:#ccc;}
+li:nth-child(1) p{color:#FC6;}
+

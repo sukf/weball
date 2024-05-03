@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员登录系统</title>
+<style>
+ *{font-family:"微软雅黑"; margin:0; padding:0; border:0; font-size:14px;color:white;}
+body {
+	background-color: #02195b;
+	background-image:url(images/cloud.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	width:100%;	
+}
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255);
+  cursor: pointer; 
+}
+#content{
+  margin-top: 100px;
+  height:520px;
+}
+#content li {
+ list-style-type:none;
+ margin-top: 15px;
+ }
+.name,.pwd{            
+  width: 310px;
+  height: 44px;
+  line-height: 44px;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 20px;
+  background-color: #0A3C78;
+  border: 1px solid #329BE0;
+}
+.name:hover,.pwd:hover,#valid:hover,.name:focus,.pwd:focus,#valid:focus{
+	  background-color: #052b64;
+}
+#login{
+  background: #3fb9ff;
+  font-size: 18px;
+  width: 329px;
+  height: 44px;
+  outline: none;
+  color: white;
+  background: -webkit-linear-gradient(#3fb9ff, #099be7, #229de3);
+  background: -o-linear-gradient(#3fb9ff, #099be7, #229de3);
+  background: -moz-linear-gradient(#3fb9ff, #099be7, #229de3);
+  background: linear-gradient(#3fb9ff, #099be7, #229de3);
+  border-radius: 20px;
+}
+#login:hover{
+  background: -webkit-linear-gradient(#229de3, #099be7,#3fb9ff);
+  background: -o-linear-gradient(#229de3, #099be7,#3fb9ff);
+  background: -moz-linear-gradient(#229de3, #099be7,#3fb9ff);
+  background: linear-gradient(#229de3, #099be7,#3fb9ff);
+}
+ #valid {
+  height: 44px;
+  width: 170px;
+  text-indent: 1em;
+  vertical-align: middle;
+  line-height: 46px;
+  outline: none;
+  border-radius: 20px;
+  background-color: #0A3C78;
+  border: 1px solid #329BE0;
+}
+ #validcode {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+#footer{  
+  text-align: center;
+  bottom: 15px;
+  position: absolute; 
+  width: 100%;
+}
+#footer a{
+	color:black;
+}  
+</style>
+</head>
+
+<body>
+<div id="content">
+  <form action="#" method="post">
+    <ul style="text-align: center;">
+      <li style="font-size: 48px">会员登录系统</li>
+      <li>
+        <input class="name" name="username" required placeholder="请输入用户名">
+      </li>
+      <li>
+        <input type="password" name="password" class="pwd" placeholder="请输入密码" required>
+      </li>
+      <li id="verifyCode" style="display: block;">
+        <input id="valid" name="rand" placeholder="请输入验证码" maxlength="4" required>
+        <span id="validcode"> <img id="img_captcha" src="images/yz.jpg" > </span> <span id="changeimg"> 换一张 </span></li>
+      <li>
+        <input type="submit" id="login" value="立即登录" ></input>
+      </li>     
+    </ul>
+  </form>
+</div>
+<div id="footer"> <a>关于我们@12345678 &nbsp;&nbsp;|&nbsp; &nbsp;</a> <a>Copyright © 2019 木木夕  保留所有权利</a> </div>
+</body>
+</html>

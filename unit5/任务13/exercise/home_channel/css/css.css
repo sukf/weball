@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+ul {
+	height: 42px;
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style-type: none;	
+}
+ul:hover {
+	color: #000;
+	cursor:pointer;
+}
+.home_channel{
+	width: 237px;
+	height: 170px;
+	margin-left:30px;
+	box-shadow:0 0 15px 2px #999999;
+	}
+.home_channel .home_channel_list {	
+	width: 240px;
+}
+.home_channel .home_channel_list li {
+	padding-top: 15px;
+	float: left;
+	width: 77px;
+	height: 68px;
+	background-color: #57526D;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	color: #CCC;
+	border: solid rgba(255,255,255,0.5) 1px;
+}
+.home_channel .home_channel_list li i {
+	font-size: 22px;
+}
+.home_channel .home_channel_list li:hover {
+	color: #FFF;
+}

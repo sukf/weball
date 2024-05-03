@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>复选框的全选和反选</title>
+<script>
+
+<!-- Begin
+function checkAll() {
+for (var j = 1; j <= 8; j++) {
+box = eval("document.checkboxform.C" + j); 
+if (box.checked == false) box.checked = true;
+   }
+}
+
+function uncheckAll() {
+for (var j = 1; j <= 8; j++) {
+box = eval("document.checkboxform.C" + j); 
+if (box.checked == true) box.checked = false;
+   }
+}
+
+function switchAll() {
+for (var j = 1; j <= 8; j++) {
+box = eval("document.checkboxform.C" + j); 
+box.checked = !box.checked;
+   }
+}
+//  End -->
+</script>
+</head>
+
+<body>
+<form name=checkboxform>
+<input type="checkbox" name="C1" checked>选项1
+<input type="checkbox" name="C2" checked>选项2
+<input type="checkbox" name="C3" checked>选项3
+<input type="checkbox" name="C4" checked>选项4<br>
+<input type="checkbox" name="C5" checked>选项5
+<input type="checkbox" name="C6" checked>选项6
+<input type="checkbox" name="C7" checked>选项7
+<input type="checkbox" name="C8" checked>选项8<br>
+<br>
+<input type="button" value="全部选中" onClick="checkAll()"><br><br>
+<input type="button" value="全部不选" onClick="uncheckAll()"><br><br>
+<input type="button" value="选择转换" onClick="switchAll()">
+</form>
+</body>
+</html>

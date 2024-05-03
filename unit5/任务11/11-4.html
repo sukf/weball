@@ -1,0 +1,39 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>清除浮动</title>
+<style type="text/css">
+.father {
+	background-color: #c0c0c0;
+	border: 1px dashed #666;
+}
+.box1,.box2,.box3 {
+	line-height: 40px;
+	background-color:#9F6;
+	margin: 15px;
+	height: 40px;
+	padding: 0px 10px;
+	border: 1px solid #999;
+	float:left;
+}
+p{
+	background-color:#CCF;
+	border: 1px dashed #C0F;
+	margin: 15px;
+	padding-top: 0px 10px;
+        clear: left;      /*清除左浮动*/	
+}
+</style>
+</head>
+
+<body>
+<div class="father">
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="box3">box3</div>
+<p>为什么要清除浮动？如果网页元素设置了浮动属性，那么该元素就会脱离文档流，不再占据原来的位置，与其相邻的其他固定元素也会受其浮动属性的影响，从而产生位置上的变化。为了避免浮动元素对其他元素产生的影响，就需要清除浮动。如何清除浮动？可以设置clear属性，即clear:left清除左浮动的影响，clear:right清除右浮动的影响，clear:both同时清除左、右两侧浮动的影响。
+</p>
+</div>
+</body>
+</html>

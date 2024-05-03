@@ -1,0 +1,25 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>边框宽度的设置</title>
+<style type="text/css">
+div{
+	border-style:solid; /*设置边框样式为单实线*/}
+#box1{
+	border-width:1px;  /*四条边框的宽度都为1像素*/}
+#box2{
+	border-width:2px 1px; /*上、下边框的宽度为2像素，左、右边框的宽度为1像素*/}
+#box3{
+	border-width:2px 3px 4px; /*上边框的宽度为2像素，左、右边框的宽度为3像素，下边框的宽度为4像素*/}
+</style>
+</head>
+
+<body>
+<div id="box1">设置四条边框的宽度为1像素，单实线</div>
+<p></p>
+<div id="box2">设置上、下边框的宽度为2像素，左、右边框的宽度为1像素，单实线</div>
+<p></p>
+<div id="box3">设置上边框的宽度为2像素，左、右边框的宽度为3像素，下边框的宽度为4像素，单实线</div>
+</body>
+</html>

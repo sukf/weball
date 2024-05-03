@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei";
+}
+ul, li {
+	list-style: none;
+}
+#tab {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 400px;
+}
+#tab .tabList ul li {
+	float: left;
+	background: #fefefe;
+	border: 1px solid #ccc;
+	padding: 5px 0;
+	width: 100px;
+	text-align: center;
+	margin-left: -1px;   /*可以让相邻边框重合*/
+	position: relative;
+	cursor: pointer;
+}
+#tab .tabCon {
+	position: absolute;
+	left: -1px;
+	top: 32px;
+	border: 1px solid #ccc;
+	border-top: none;   /*上边框设置为无*/
+	width: 403px;
+	height: 183px;
+}
+#tab .tabCon div {
+	padding: 0px;
+	position: absolute;	
+}
+#tab .tabCon div img {
+	width: 403px;
+	height: 183px;
+}
+#tab .tabList li.cur {
+	border-bottom: none; /*选中的选项卡，下边框设置为无*/
+	background: #fff;
+}

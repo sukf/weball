@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>会员注册</title>
+<link href="style/div.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="register">
+<form action="#">
+  <h2>会员注册</h2>
+  <p><span>用户名:</span>
+     <input type="text" required pattern="^[a-zA-Z][a-zA-Z0-9_]{4,15}$" class="usually">（字母开头，长度为5~16位，允许字母、数字、下画线）
+  </p>
+  <p><span>密码:</span>
+     <input type="password" required pattern="^[a-zA-Z]\w{5,17}$" class="usually">（字母开头，长度为6~18位，只能包含字母、数字和下画线）</p>
+  <p><span>性别:</span>
+     <input type="radio" name="sex" id="male" class="radio" checked><label for="male">男</label>
+     <input type="radio" name="sex" id="female" class="radio"><label for="female">女</label>
+  </p>
+  <p><span>出生年月:</span>
+     <input name="birth" type="date">
+  </p>
+  <p><span>Email地址:</span>
+     <input type="email" required class="usually"> 
+  </p>
+  <p id="btn">
+     <input type="submit" value="注册会员">     
+  </p>
+</form>
+</div>
+</body>
+</html>

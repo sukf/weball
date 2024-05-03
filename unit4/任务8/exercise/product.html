@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>表格样式</title>
+<!--css伪类在table中的应用，包括斑纹行和鼠标悬停-->
+<style>
+.tab {
+	border: none;
+	font-size: 12px;
+}
+th {
+	padding:3px;
+	background: #333333;
+	color: #FFF;
+}/*列名行反黑*/
+tr:nth-child(even) {
+	background: #f0f0f0;
+}/*奇数行*/
+tr:nth-child(odd) {
+	background: #ddd;
+}/*偶数行*/
+tr:nth-child(n):hover {
+	background: #FFC;
+}/*行鼠标悬停*/
+th:nth-child(1) {
+	width: 35%;
+}/*第1列*/
+th:nth-last-child(1) {
+	width: 30%;
+}/*最后列*/
+td {
+	padding:3px;
+	text-align: right;
+}/*td右对齐*/
+td:nth-child(1) {
+	text-align: left;
+}/*第1列td左对齐*/
+tr:nth-last-child(-n+2) {
+	font-size: 14px;
+	font-weight: bold;
+}/*倒数2行加粗*/
+tr:nth-last-child(2) {
+	color: #03C;
+}/*倒数第2行颜色*/
+</style>
+</head>
+
+<body>
+<table width="400" cellpadding="0" cellspacing="0" class="tab">
+  <tr>
+    <th>名称</th>
+    <th>单价</th>
+    <th>数量</th>
+    <th>合计</th>
+  </tr>
+  <tr>
+    <td>电磁炉</td>
+    <td>128</td>
+    <td>2</td>
+    <td>256</td>
+  </tr>
+  <tr>
+    <td>电水壶</td>
+    <td>50</td>
+    <td>10</td>
+    <td>500</td>
+  </tr>
+  <tr>
+    <td>电风扇</td>
+    <td>99</td>
+    <td>1</td>
+    <td>99</td>
+  </tr>
+  <tr>
+    <td colspan="3">运费</td>
+    <td>60</td>
+  </tr>
+  <tr>
+    <td colspan="3">合计</td>
+    <td>885</td>
+  </tr>
+</table>
+</body>
+</html>

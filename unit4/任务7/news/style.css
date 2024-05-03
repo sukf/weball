@@ -1,0 +1,32 @@
+hr {
+	background-color: #FF9900;
+	text-align: left; /*左对齐，兼容IE 和 Opera*/
+	height: 2px;   /*如果不加height:2px;的话，在chrome会显示不出来。*/
+	width: 450px;
+	margin-left: 0px;  /*左对齐，兼容Firefox、Chrome 和 Safari*/ 
+	border-top-width: 0px;   /*四行代码可以简写为border:0; 如不设置，虽然颜色改变了，但是会显示一条黑色的边框。*/
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+}
+ul {
+	list-style-type: square;
+}
+li {
+	font-family: "宋体";
+	font-size: 16px;
+	line-height: 1.6em;
+	color: #666666;
+}
+a:link {
+	color: #666666;
+	text-decoration: none;
+}
+a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF9900;
+	text-decoration: underline;
+}

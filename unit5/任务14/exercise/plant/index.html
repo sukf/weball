@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>绿色植物</title>
+<style>
+.plant{
+    margin-bottom: 10px;
+    width: 270px;
+    height: 270px;
+}
+.plant_info {
+    text-align: center;
+    line-height: 2;
+}
+.plant_price {
+    color:#F30;
+}
+.plant_txt {
+    display: inline-block;
+    width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.plant_txt a {
+    font-size: 14px;
+    color: #333;
+	text-decoration: none;
+}
+.plant_txt a:hover{
+	text-decoration:underline;}
+li.plant{
+	display: list-item;
+	list-style:none;
+    float: left;
+    margin: 30px 0 0 18px;
+    width: 270px;
+    height: 354px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+li.plant:hover{
+box-shadow: 0 4px 4px 0 rgba(0,0,0,.19);
+}
+.plant_img{
+	overflow:hidden;}
+.plant_img img{
+	transition:all 1.2s;}
+.plant_img img:hover{
+	  transform:scale(1.2);}
+</style>
+</head>
+
+<body>
+<ul>
+<li class="plant">
+  <div class="plant_img"> <a href="#" target="_blank"><img src="images/1.png" alt=""></a> </div>
+  <div class="plant_info"> 
+    <span class="plant_price">价格：&nbsp;¥59.00元</span> 
+    <span class="plant_txt"> <a href="#" target="_blank">定盘星生石花组合</a> </span> 
+  </div>
+</li>
+<li class="plant">
+  <div class="plant_img"> <a href="#" target="_blank"><img src="images/2.png" alt=""></a> </div>
+  <div class="plant_info"> 
+    <span class="plant_price">价格：&nbsp;¥9.00元</span> 
+    <span class="plant_txt"> <a href="#" target="_blank">长寿花</a> </span> 
+  </div>
+</li>
+<li class="plant">
+  <div class="plant_img"> <a href="#" target="_blank"><img src="images/3.png" alt=""></a> </div>
+  <div class="plant_info"> 
+    <span class="plant_price">价格：&nbsp;¥188.00元</span> 
+    <span class="plant_txt"> <a href="#" target="_blank">云端松露</a> </span> 
+  </div>
+</li>
+<li class="plant">
+  <div class="plant_img"> <a href="#" target="_blank"><img src="images/4.png" alt=""></a> </div>
+  <div class="plant_info"> 
+    <span class="plant_price">价格：&nbsp;¥6.6元</span> 
+    <span class="plant_txt"> <a href="#" target="_blank">鸭脚木</a> </span> 
+  </div>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数组对象的使用</title>
+<script>
+   var student=new Array ("张三","李四","王五");
+   var student1=new Array ("zhangsan","lisi","wangwu"); 
+   document.write("<ol>");
+   document.write("<li>",student,"</li>");//输出各个元素
+   document.write("<li>",student.join(),"</li>");//用逗号连接各个元素
+   document.write("<li>",student.join("、"),"</li>");//用顿号连接各个元素
+   document.write("<li>",student.reverse(),"</li>");//倒序
+   document.write("<li>",student.concat(student1),"</li>");//连接两个数组
+   document.write("<li>",student1.sort(),"</li>");//按字典顺序重新排序
+   document.write("</ol>");
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
